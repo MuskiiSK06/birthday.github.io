@@ -1,0 +1,122 @@
+body{
+    background: linear-gradient(to bottom right, black, rgb(39, 37, 37), rgb(44, 40, 40));
+   }
+
+   .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    /* border: 1px solid white; */
+    height: 700px;
+    width: 900px;
+    margin: 50px 20px;
+ }
+
+   .images img{
+    height: 400px;
+    width: 260px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgb(138, 114, 114);
+    transition: slidedown 1s ease, scale 0.7s ease;
+}
+
+   @keyframes slidedown{
+       from{
+         transform: translateY(-2500px);
+    }
+       to{
+         transform: translateY(0);
+    }
+}
+
+.images #pic1{
+    animation: slidedown 39s ease-in;
+}
+.images #pic2{
+    animation: slidedown 38s ease-in;
+}
+.images #pic3{
+    animation: slidedown 37s ease-in;
+}
+.images #pic4{
+    animation: slidedown 36s ease-in;
+}
+.images #pic5{
+    animation: slidedown 35s ease-in;
+}
+.images #pic6{
+    animation: slidedown 34s ease-in;
+}
+.images #pic7{
+    animation: slidedown 33s ease-in;
+}
+.images #pic8{
+    animation: slidedown 32s ease-in;
+}
+.images #pic9{
+    animation: slidedown 31s ease-in;
+}
+.images #pic10{
+    animation: slidedown 30s ease-in;
+}
+.images #pic11{
+    animation: slidedown 29s ease-in;
+}
+.images #pic12{
+    animation: slidedown 28s ease-in;
+}
+.images #pic13{
+    animation: slidedown 27s ease-in;
+}
+.images #pic14{
+    animation: slidedown 26s ease-in;
+}
+.images #pic15{
+    animation: slidedown 25s ease-in;
+}
+.images #pic16{
+    animation: slidedown 24s ease-in;
+}
+.images #pic17{
+    animation: slidedown 23s ease-in;
+}
+.images #pic18{
+    animation: slidedown 22s ease-in;
+}
+.images #pic19{
+    animation: slidedown 21s ease-in;
+}
+.images #pic20{
+    animation: slidedown 20s ease-in;
+}
+.images #pic21{
+    animation: slidedown 19s ease-in;
+}
+.images #pic22{
+    animation: slidedown 18s ease-in;
+}
+.images #pic23{
+    animation: slidedown 17s ease-in;
+}
+.images #pic24{
+    animation: slidedown 16s ease-in;
+}
+.images #pic25{
+    animation: slidedown 15s ease-in;
+}
+.images #pic26{
+    animation: slidedown 14s ease-in;
+}
+.images #pic27{
+    animation: slidedown 13s ease-in;
+}
+.images #pic28{
+    animation: slidedown 12s ease-in;
+}
+.images #pic29{
+    animation: slidedown 11s ease-in;
+}
+.images #pic30{
+    animation: slidedown 10s ease-in;
+}

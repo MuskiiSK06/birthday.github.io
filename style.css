@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.left-side-img{
+    position: absolute;
+    left: 0;
+    height: 728px;
+    width: 450px;
+    animation: slideright 2s ease-in;
+}
+
+@keyframes slideright{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideleft{
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.right-side-img{
+    position: absolute;
+    right: 0;
+    height: 728px;
+    width: 450px;
+    animation: slideleft 2s ease-in;
+}
+
+.text{
+    color: goldenrod;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@font-face {
+    font-family: "header";
+    src: url(fonts/ifc_insane_rodeo/IFC\ INSANE\ RODEO\ BOLD\ Bold.ttf);
+}
+
+@keyframes slidedown{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+h1{
+    font-size: 80px;
+    font-family: "header";
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    animation: slidedown 3s ease-in;
+}
+
+@font-face {
+    font-family: "starlita";
+    src: url(fonts/starlita/Starlita.otf);
+}
+
+@keyframes slidedn{
+    from{
+        font-size: 0;
+    }
+    to{
+       font-size: 50px; 
+    }
+}
+
+p{
+    font-size: 50px;
+    margin-top: 10px;
+    word-spacing: 15px;
+    font-family: "starlita";
+    animation: slidedn 4s ease-in;
+}
+
+@keyframes slideup{
+    from{
+        height: 0;
+        width: 0;
+    }
+    to{
+       height: 380px;
+       width: 60%; 
+    }
+}
+
+.slider{
+    height: 380px;
+    width: 60%;
+    margin: 20px 20%;
+    animation: slideup 5s ease-in;
+}
+
+.slider-track{
+    color: white;
+    height: 380px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px grey;
+    /* border: 1px solid white; */
+}
+
+@keyframes scrollLeft {
+    to{
+        left: -200px;
+    }
+}
+
+.picture{
+    height: 380px;
+    width: 30%;
+    position: absolute;
+    margin-inline: auto;
+    left: 100%;
+    animation: scrollLeft 20s linear infinite;
+}
+
+.slide #pic1{
+    animation-delay: calc(20s / 4 * (4 - 1) * -1);
+}
+.slide #pic2{
+    animation-delay: calc(20s / 4 * (4 - 2) * -1);
+}
+.slide #pic3{
+    animation-delay: calc(20s / 4 * (4 - 3) * -1);
+}
+.slide #pic4{
+    animation-delay: calc(20s / 4 * (4 - 4) * -1);
+}
+
+@keyframes btn-slide {
+    from{
+        transform: translateY(600px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.btn{
+    margin: 40px 46%;
+    animation: btn-slide 6s ease-in;
+}
+
+.btn button{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, #443627, #D98324, #EFDCAB);
+    border-style: none;
+    outline: none;
+    font-family: serif;
+    font-size: 16px;
+    box-shadow: 3px 4px 15px grey;
+}
+
+.btn button a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn button:hover{
+    scale: 1.2;
+    box-shadow: 5px 5px 10px white;
+}
